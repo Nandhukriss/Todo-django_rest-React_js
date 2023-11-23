@@ -22,4 +22,4 @@ You will need two terminals pointed to the frontend and backend directories to s
 
 * [React](https://reactjs.org) - A progressive JavaScript framework.
 * [Python](https://www.python.org/) - A programming language that lets you work quickly and integrate systems more effectively.
-* [Django](http://djangoproject.org/) - A high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+* [Django Rest Framework]([http://djangoproject.org/](https://www.django-rest-framework.org/)) - Django REST framework is a powerful and flexible toolkit for building Web APIs.design.
