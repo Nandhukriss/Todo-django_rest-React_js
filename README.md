@@ -15,7 +15,10 @@ Todo application built Django Rest Framework  and React.
 ## Run the application
 You will need two terminals pointed to the frontend and backend directories to start the servers for this application.
 
-1. Run this command to start the server  ```[python manage.py runserver]``` 
+1. Run this command to start the server  ```[python manage.py runserver]```
+
+![django rest](https://github.com/Nandhukriss/Todo-django_rest-React_js/assets/103727372/28ff69d0-2c40-42b3-9e76-7b9c017aa1df)
+
  
 
 ## Built With
