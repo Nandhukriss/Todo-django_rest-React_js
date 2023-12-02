@@ -19,6 +19,72 @@ You will need two terminals pointed to the frontend and backend directories to s
 
 ![django rest](https://github.com/Nandhukriss/Todo-django_rest-React_js/assets/103727372/28ff69d0-2c40-42b3-9e76-7b9c017aa1df)
 
+# Todo API
+
+This API allows you to perform CRUD (Create, Read, Update, Delete) operations on tasks.
+
+## API Endpoints
+
+### Overview
+- **GET** `/api/`: Get an overview of available API endpoints.
+
+### List all tasks
+- **GET** `/api/task-list/`: Get a list of all tasks.
+
+### Task Detail View
+- **GET** `/api/task-detail/<str:pk>/`: Get details of a specific task.
+
+### Create a task
+- **POST** `/api/task-create/`: Create a new task.
+
+### Update a task
+- **POST** `/api/task-update/<str:pk>/`: Update an existing task.
+
+### Delete a task
+- **DELETE** `/api/task-delete/<str:pk>/`: Delete a task.
+
+## How to Use
+
+### Get an Overview
+Send a **GET** request to `/api/` to get an overview of available endpoints.
+
+### List all tasks
+Send a **GET** request to `/api/task-list/` to retrieve a list of all tasks.
+
+### Task Detail View
+Send a **GET** request to `/api/task-detail/<str:pk>/` to get details of a specific task.
+
+### Create a task
+Send a **POST** request to `/api/task-create/` with the task data in the request body to create a new task.
+
+### Update a task
+Send a **POST** request to `/api/task-update/<str:pk>/` with the updated task data in the request body to update an existing task.
+
+### Delete a task
+Send a **DELETE** request to `/api/task-delete/<str:pk>/` to delete a task.
+
+## Example Usage
+
+```bash
+# Get an overview of available endpoints
+curl -X GET http://your-api-url/api/
+
+# List all tasks
+curl -X GET http://your-api-url/api/task-list/
+
+# Get details of a specific task
+curl -X GET http://your-api-url/api/task-detail/1/
+
+# Create a new task
+curl -X POST -H "Content-Type: application/json" -d '{"title": "Task Title", "description": "Task Description"}' http://your-api-url/api/task-create/
+
+# Update an existing task
+curl -X POST -H "Content-Type: application/json" -d '{"title": "Updated Task Title", "description": "Updated Task Description"}' http://your-api-url/api/task-update/1/
+
+# Delete a task
+curl -X DELETE http://your-api-url/api/task-delete/1/
+
+
  
 
 ## Built With
