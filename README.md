@@ -65,25 +65,6 @@ Send a **DELETE** request to `/api/task-delete/<str:pk>/` to delete a task.
 
 ## Example Usage
 
-```bash
-# Get an overview of available endpoints
-curl -X GET http://your-api-url/api/
-
-# List all tasks
-curl -X GET http://your-api-url/api/task-list/
-
-# Get details of a specific task
-curl -X GET http://your-api-url/api/task-detail/1/
-
-# Create a new task
-curl -X POST -H "Content-Type: application/json" -d '{"title": "Task Title", "description": "Task Description"}' http://your-api-url/api/task-create/
-
-# Update an existing task
-curl -X POST -H "Content-Type: application/json" -d '{"title": "Updated Task Title", "description": "Updated Task Description"}' http://your-api-url/api/task-update/1/
-
-# Delete a task
-curl -X DELETE http://your-api-url/api/task-delete/1/
-
 
  
 
